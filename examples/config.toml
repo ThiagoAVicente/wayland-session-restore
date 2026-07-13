@@ -1,0 +1,14 @@
+# hsr configuration — ~/.config/hyprland-session-restore/config.toml
+# All keys optional.
+
+# Case-insensitive regexes matched against window class.
+# Matching windows are neither snapshotted nor restored.
+exclude = ["^Rofi$", "^steam_", "polkit"]
+
+# Override the restore command for a window class (argv list).
+# Default is the command line captured at snapshot time.
+[launch_overrides]
+firefox = ["firefox"]
+
+[snapshot]
+interval = 60   # seconds between snapshots for `hsr watch`

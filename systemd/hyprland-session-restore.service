@@ -1,0 +1,7 @@
+[Unit]
+Description=Hyprland session snapshot
+ConditionEnvironment=HYPRLAND_INSTANCE_SIGNATURE
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/hsr snapshot
